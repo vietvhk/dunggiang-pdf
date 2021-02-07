@@ -1,0 +1,116 @@
+tabs:
+    fields:
+        ma_kho:
+            label: 'Mã kho'
+            span: auto
+            type: text
+            tab: 'Thông tin chung'
+        type:
+            label: 'Loại hình'
+            options:
+                - Xuất
+                - Nhập
+            showSearch: true
+            span: auto
+            type: dropdown
+            tab: 'Thông tin chung'
+            placeholder: '-- Chọn loại hình --'
+        ngay_xuat_phieu:
+            label: 'Ngày xuất phiếu'
+            mode: date
+            span: auto
+            type: datepicker
+            tab: 'Thông tin chung'
+            format: d/m/Y
+        tong_so_tien_viet_bang_chu:
+            label: 'Tổng số tiền (viết bằng chữ)'
+            span: auto
+            type: text
+            tab: 'Thông tin chung'
+        so_chung_tu_goc_kem_theo:
+            label: 'Số chứng từ gốc kèm theo'
+            span: auto
+            type: text
+            tab: 'Thông tin chung'
+        json_data_nhap:
+            label: 'Thông tin nhập'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'Thông tin nhập (JSON)'
+            dependsOn: type
+            form:
+                fields:
+                    ma_so:
+                        label: 'Mã số'
+                        span: auto
+                        type: text
+                    ten_nhan_hieu:
+                        label: 'Tên nhãn hiệu, quy cách vật tư, dụng cụ & hàng hóa'
+                        span: auto
+                        type: text
+                    nha_cung_cap:
+                        label: 'Nhà cung cấp'
+                        span: auto
+                        type: text
+                    don_vi_tinh:
+                        label: 'Đơn vị tính'
+                        span: auto
+                        type: text
+                    so_luong_nhap:
+                        label: 'Số lượng nhập'
+                        span: auto
+                        type: text
+                    don_gia:
+                        label: 'Đơn giá'
+                        span: auto
+                        type: text
+                    thanh_tien:
+                        label: 'Thành tiền'
+                        span: auto
+                        type: text
+        json_data_xuat:
+            label: 'Thông tin xuất'
+            prompt: 'Add new item'
+            span: full
+            type: repeater
+            tab: 'Thông tin xuất (JSON)'
+            dependsOn: type
+            form:
+                fields:
+                    ma_so:
+                        label: 'Mã số'
+                        span: auto
+                        type: text
+                    ten_nhan_hieu:
+                        label: 'Tên nhãn hiệu, quy cách vật tư, dụng cụ & hàng hóa'
+                        span: auto
+                        type: text
+                    nha_cung_cap:
+                        label: 'Nhà cung cấp'
+                        span: auto
+                        type: text
+                    don_vi_tinh:
+                        label: 'Đơn vị tính'
+                        span: auto
+                        type: text
+                    so_luong_nhap:
+                        label: 'Số lượng nhập'
+                        span: auto
+                        type: text
+                    don_gia:
+                        label: 'Đơn giá'
+                        span: auto
+                        type: text
+                    thanh_tien:
+                        label: 'Thành tiền'
+                        span: auto
+                        type: text
+                    ly_do_xuat_khau:
+                        label: 'Lý do xuất khẩu'
+                        span: auto
+                        type: text
+                    ho_ten_nguoi_nhan:
+                        label: 'Họ tên người nhận'
+                        span: auto
+                        type: text

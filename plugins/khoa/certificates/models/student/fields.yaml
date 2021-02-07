@@ -1,0 +1,51 @@
+fields:
+    ho_ten:
+        label: 'Họ tên'
+        span: auto
+        placeholder: 'Nhập họ tên'
+        required: 1
+        type: text
+        required: true
+    cmnd:
+        label: CMND
+        span: auto
+        placeholder: 'Nhập CMND'
+        type: text
+    que_quan:
+        label: 'Địa chỉ thường trú'
+        span: auto
+        placeholder: 'Nhập địa chỉ thường trú'
+        type: text
+    noi_sinh:
+        label: 'Nơi sinh'
+        span: auto
+        placeholder: 'Nhập nơi sinh'
+        type: text
+    noi_cap:
+        label: 'Nơi cấp CMND'
+        span: auto
+        placeholder: 'Nhập nơi cấp'
+        type: text
+    dob:
+        label: 'Sinh nhật'
+        mode: date
+        span: auto
+        type: datepicker
+        format: d/m/Y
+    nienkhoa:
+        label: 'Niên khóa'
+        nameFrom: name
+        descriptionFrom: description
+        span: auto
+        type: relation
+        required: true
+        placeholder: -- Chọn niên khóa --
+    nhomnganh_id:
+        label: 'Nhóm ngành'
+        span: auto
+        nameFrom: name
+        descriptionFrom: description
+        type: dropdown
+        dependsOn: nienkhoa
+        required: true
+        placeholder: -- Chọn nhóm ngành --

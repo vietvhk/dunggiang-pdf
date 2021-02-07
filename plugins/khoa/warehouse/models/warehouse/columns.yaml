@@ -1,0 +1,17 @@
+columns:
+    id:
+        label: '#'
+        type: number
+        sortable: true
+    ma_kho:
+        label: 'Mã kho'
+        type: text
+    ngay_xuat_phieu:
+        label: 'Ngày xuất phiếu'
+        type: date
+        format: d/m/Y
+    type:
+        label: 'Loại phiếu'
+        type: partial
+        searchable: false
+        path: $/khoa/warehouse/models/warehouse/_type.htm
